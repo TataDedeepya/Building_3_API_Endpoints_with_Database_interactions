@@ -31,6 +31,7 @@ In our application I used RESTful API (Representational State Transfer API) to c
 
 **Endpoint 1: Retrieve All Books **
 Implemented an endpoint that retrieves a list of all books in the library from the database.
+
 app.get('/api/books', async (req, res) => {
 const books = await Book.find();
 res.json(books);
@@ -39,6 +40,7 @@ res.json(books);
 Which returns the required books present in the library and their Descriptions
 
 If we enter a non existing book it returns “There is no such book”
+
 
 app.get('/api/books/:id', async (req, res) => {
 const book = await Book.findById(req.params.id);
@@ -51,9 +53,11 @@ res.json(book);
  Similarly,
 
 **Endpoint 2: Add a New Book **
+
 Implemented an endpoint that allows the addition of a new book to the library. 
 Endpoint: POST /api/books 
 Request Body: JSON object representing the new book. 
+
 
 app.post('/api/books', async (req, res) => {
 const { Name_of_the_book, Author, Genre, Edition } = req.body;
@@ -77,6 +81,7 @@ If there is already a book with the name we are entering it will return “that 
 
 
 **Endpoint 3: Update Book Details **
+
 Implemented an endpoint that allows updating the details of a specific book in the library. 
 Endpoint: PUT /api/books/{id} 
 Request Body: JSON object with updated book details.
@@ -101,4 +106,5 @@ res.json(updatedBook);
 } catch (error) {
 res.status(400).json({ error: error.message });
 }
+
 If user wants to update the details of a non existent book then error handling exception is throwed and it returns “Please enter a book which is already present to update its details”
