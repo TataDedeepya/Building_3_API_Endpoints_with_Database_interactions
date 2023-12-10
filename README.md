@@ -73,7 +73,7 @@ res.status(400).json({ error: error.message });
 If there is already a book with the name we are entering it will return “that book already exists” (for duplicate entries)
 
 
-**Endpoint 3: Update Book Details **
+**Endpoint 3: Update Book Details **
 Implemented an endpoint that allows updating the details of a specific book in the library. 
 Endpoint: PUT /api/books/{id} 
 Request Body: JSON object with updated book details.
