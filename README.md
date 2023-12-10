@@ -1,6 +1,6 @@
 **Building three API Endpoints with Database Interaction**
 
-In our assignment we intend to manage a library system.Our goal is to use API’s to interact with database to perform basic CRUD operations on the books.
+In this assignment we intend to manage a library system.Our goal is to use API’s to interact with database to perform basic CRUD operations on the books.
 
 First we installed all the node modules and packages needed to build our project and interact with the databases and the instructions regarding installations and error handling are written in their respective Readme files.
 
