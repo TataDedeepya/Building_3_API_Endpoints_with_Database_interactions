@@ -1,10 +1,13 @@
+**Uploaded the zip folder of the source code because node modules were very large.Please click on view raw to download the files.**
+
+
 **Building three API Endpoints with Database Interaction**
 
 In this assignment we intend to manage a library system.Our goal is to use API’s to interact with database to perform basic CRUD operations on the books.
 
 First we installed all the node modules and packages needed to build our project and interact with the databases and the instructions regarding installations and error handling are written in their respective Readme files.
 
-For our Library Management System I created a database which contain the {Name_of_the_book, Author, Genre, Edition}
+For our Library Management System I created a database which contain the Book{Name_of_the_book, Author, Genre, Edition}
 
 _To seed the database with mockdata I used the method _
 const seedDatabase = async () => {
